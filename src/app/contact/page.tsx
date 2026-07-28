@@ -23,24 +23,23 @@ export default function Contact() {
 
     setStatus("submitting");
 
-    // Simulate API call
     setTimeout(() => {
       setStatus("success");
     }, 1500);
   };
 
   return (
-    <div className="w-full min-h-screen bg-obsidian text-platinum py-12 px-6">
+    <div className="w-full min-h-screen bg-alabaster text-charcoal py-12 px-6">
       <div className="mx-auto max-w-7xl space-y-12">
         {/* Title */}
-        <div className="border-b border-zinc-border pb-8">
-          <span className="font-mono text-xs text-gold-accent tracking-widest uppercase block">
-            // COMMUNICATIONS_PROTOCOL
+        <div className="border-b border-sand-border pb-8">
+          <span className="font-mono text-xs text-amber-accent tracking-widest uppercase block">
+            Communications Protocol
           </span>
-          <h1 className="font-display text-4xl font-bold tracking-tight text-white mt-2">
+          <h1 className="font-serif text-4xl font-normal text-charcoal mt-2">
             Establish Connection
           </h1>
-          <p className="font-sans text-xs text-steel mt-2 max-w-md">
+          <p className="font-sans text-xs text-muted-slate mt-2 max-w-md">
             Complete the system ledger specifications below or use our direct endpoints for WhatsApp or email.
           </p>
         </div>
@@ -48,41 +47,41 @@ export default function Contact() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Direct channels */}
           <div className="lg:col-span-5 space-y-6">
-            <div className="border border-zinc-border bg-graphite p-6 space-y-6">
-              <div className="font-mono text-xs text-gold-accent tracking-wider uppercase border-b border-zinc-border pb-2">
-                // DIRECT_ENDPOINTS
+            <div className="border border-sand-border bg-sandstone p-6 space-y-6 rounded-xl shadow-sm">
+              <div className="font-mono text-xs text-amber-accent tracking-wider uppercase border-b border-sand-border/60 pb-2">
+                Direct Endpoints
               </div>
 
               <div className="space-y-4 font-sans text-xs">
                 <div>
-                  <span className="font-mono text-[9px] text-zinc-500 block">// EMAIL</span>
-                  <a href="mailto:support@kolitech.in" className="text-white hover:text-gold-accent font-mono font-bold transition-colors">
+                  <span className="font-mono text-[9px] text-muted-slate block font-bold">EMAIL</span>
+                  <a href="mailto:support@kolitech.in" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors">
                     support@kolitech.in
                   </a>
                 </div>
 
                 <div>
-                  <span className="font-mono text-[9px] text-zinc-500 block">// MOBILE_VOICE</span>
-                  <a href="tel:+919265739137" className="text-white hover:text-gold-accent font-mono font-bold transition-colors">
+                  <span className="font-mono text-[9px] text-muted-slate block font-bold">MOBILE VOICE</span>
+                  <a href="tel:+919265739137" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors">
                     +91 92657 39137
                   </a>
                 </div>
 
                 <div>
-                  <span className="font-mono text-[9px] text-zinc-500 block">// WHATSAPP_DIRECT</span>
+                  <span className="font-mono text-[9px] text-muted-slate block font-bold">WHATSAPP DIRECT</span>
                   <a 
                     href="https://wa.me/919265739137" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-emerald-400 hover:text-gold-accent font-mono font-bold transition-colors inline-flex items-center gap-1.5"
+                    className="text-emerald-700 hover:text-amber-accent font-mono font-bold transition-colors inline-flex items-center gap-1.5"
                   >
-                    SEND_SECURE_MESSAGE_ &rarr;
+                    SEND SECURE MESSAGE &rarr;
                   </a>
                 </div>
 
                 <div>
-                  <span className="font-mono text-[9px] text-zinc-500 block">// PHYSICAL_ADDRESS</span>
-                  <p className="text-white leading-relaxed font-mono">
+                  <span className="font-mono text-[9px] text-muted-slate block font-bold">PHYSICAL ADDRESS</span>
+                  <p className="text-charcoal leading-relaxed font-mono">
                     402, Signature Plaza,<br />
                     Surat, Gujarat, India<br />
                     Pin: 395007
@@ -91,22 +90,22 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="border border-zinc-border bg-[#0E0E10] p-6 font-sans text-[10px] text-steel leading-relaxed">
-              <span className="font-mono text-gold-accent block font-bold">// SECURE_NOTE:</span>
+            <div className="border border-sand-border bg-sandstone/30 p-6 font-sans text-[10px] text-muted-slate leading-relaxed rounded-xl">
+              <span className="font-mono text-amber-accent block font-bold">SECURE NOTE:</span>
               Your input fields are logged directly to our internal project directory. We do not distribute database contact logs to marketing partners.
             </div>
           </div>
 
           {/* Right Column: Project Builder Form */}
-          <div className="lg:col-span-7 border border-zinc-border bg-graphite p-6 space-y-6">
-            <div className="font-mono text-xs text-platinum tracking-wider uppercase border-b border-zinc-border pb-2">
-              // PROJECT_LEDGER_FORM
+          <div className="lg:col-span-7 border border-sand-border bg-sandstone p-6 space-y-6 rounded-xl shadow-sm">
+            <div className="font-mono text-xs text-charcoal tracking-wider uppercase border-b border-sand-border/60 pb-2">
+              Project Ledger Form
             </div>
 
             {status === "success" ? (
-              <div className="border border-emerald-500/30 bg-emerald-500/5 p-6 space-y-4 font-mono text-xs">
-                <div className="text-emerald-400 font-bold">✓ DISPATCH_SUCCESSFUL // LOGS_STORED</div>
-                <p className="text-steel leading-relaxed">
+              <div className="border border-emerald-600/30 bg-emerald-500/5 p-6 space-y-4 font-mono text-xs rounded-xl">
+                <div className="text-emerald-700 font-bold">✓ DISPATCH SUCCESSFUL • LOGS STORED</div>
+                <p className="text-muted-slate leading-relaxed">
                   We have received your project parameters. An engineer will analyze your description and contact you via email within one business day.
                 </p>
                 <button
@@ -120,56 +119,56 @@ export default function Contact() {
                       description: ""
                     });
                   }}
-                  className="border border-zinc-border px-4 py-2 hover:border-gold-accent text-white transition-colors cursor-pointer"
+                  className="border border-sand-border bg-alabaster px-4 py-2 hover:border-charcoal text-charcoal transition-colors cursor-pointer rounded-lg"
                 >
-                  SUBMIT_NEW_LEDGER_
+                  SUBMIT NEW LEDGER
                 </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4 font-mono text-xs">
                 {status === "error" && (
-                  <div className="border border-rose-500/30 bg-rose-500/5 p-4 text-rose-400 text-[10px]">
+                  <div className="border border-rose-500/30 bg-rose-500/5 p-4 text-rose-700 text-[10px] rounded">
                     ERR: {errorDetails}
                   </div>
                 )}
 
                 {/* Name */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="name" className="text-zinc-500 text-[9px]">// FOUNDER_NAME *</label>
+                  <label htmlFor="name" className="text-muted-slate text-[9px] font-bold">FOUNDER NAME *</label>
                   <input
                     type="text"
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     disabled={status === "submitting"}
-                    className="bg-obsidian border border-zinc-border px-3 py-2 text-white focus:border-gold-accent focus:outline-none transition-colors"
+                    className="bg-alabaster border border-sand-border px-3 py-2 text-charcoal focus:border-amber-accent focus:outline-none transition-colors rounded-lg"
                     placeholder="Enter full name"
                   />
                 </div>
 
                 {/* Email */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="email" className="text-zinc-500 text-[9px]">// EMAIL_ENDPOINT *</label>
+                  <label htmlFor="email" className="text-muted-slate text-[9px] font-bold">EMAIL ENDPOINT *</label>
                   <input
                     type="email"
                     id="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     disabled={status === "submitting"}
-                    className="bg-obsidian border border-zinc-border px-3 py-2 text-white focus:border-gold-accent focus:outline-none transition-colors"
+                    className="bg-alabaster border border-sand-border px-3 py-2 text-charcoal focus:border-amber-accent focus:outline-none transition-colors rounded-lg"
                     placeholder="name@company.com"
                   />
                 </div>
 
                 {/* Budget */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="budget" className="text-zinc-500 text-[9px]">// ESTIMATED_BUDGET_RANGE</label>
+                  <label htmlFor="budget" className="text-muted-slate text-[9px] font-bold">ESTIMATED BUDGET RANGE</label>
                   <select
                     id="budget"
                     value={formData.budget}
                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                     disabled={status === "submitting"}
-                    className="bg-obsidian border border-zinc-border px-3 py-2 text-white focus:border-gold-accent focus:outline-none transition-colors"
+                    className="bg-alabaster border border-sand-border px-3 py-2 text-charcoal focus:border-amber-accent focus:outline-none transition-colors rounded-lg"
                   >
                     <option value="$15,000 - $30,000">$15,000 - $30,000 (Standard API/Database Rebuild)</option>
                     <option value="$30,000 - $60,000">$30,000 - $60,000 (Complete Platform Migration)</option>
@@ -179,28 +178,28 @@ export default function Contact() {
 
                 {/* Legacy codebase details */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="legacy" className="text-zinc-500 text-[9px]">// LEGACY_CODEBASE_LINK_OR_STACK (OPTIONAL)</label>
+                  <label htmlFor="legacy" className="text-muted-slate text-[9px] font-bold">LEGACY CODEBASE LINK OR STACK (OPTIONAL)</label>
                   <input
                     type="text"
                     id="legacy"
                     value={formData.legacyDetails}
                     onChange={(e) => setFormData({ ...formData, legacyDetails: e.target.value })}
                     disabled={status === "submitting"}
-                    className="bg-obsidian border border-zinc-border px-3 py-2 text-white focus:border-gold-accent focus:outline-none transition-colors"
+                    className="bg-alabaster border border-sand-border px-3 py-2 text-charcoal focus:border-amber-accent focus:outline-none transition-colors rounded-lg"
                     placeholder="e.g. github repository path or legacy framework versions"
                   />
                 </div>
 
                 {/* Project description */}
                 <div className="flex flex-col space-y-1">
-                  <label htmlFor="desc" className="text-zinc-500 text-[9px]">// SYSTEM_OPERATIONS_DESCRIPTION *</label>
+                  <label htmlFor="desc" className="text-muted-slate text-[9px] font-bold">SYSTEM OPERATIONS DESCRIPTION *</label>
                   <textarea
                     id="desc"
                     rows={4}
                     value={formData.description}
                     onChange={(e) => setFormData({ ...formData, description: e.target.value })}
                     disabled={status === "submitting"}
-                    className="bg-obsidian border border-zinc-border px-3 py-2 text-white focus:border-gold-accent focus:outline-none transition-colors resize-none"
+                    className="bg-alabaster border border-sand-border px-3 py-2 text-charcoal focus:border-amber-accent focus:outline-none transition-colors resize-none rounded-lg"
                     placeholder="Detail what is currently broken or what load limits your system must handle."
                   ></textarea>
                 </div>
@@ -210,9 +209,9 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={status === "submitting"}
-                    className="w-full bg-gold-accent border border-gold-accent text-obsidian py-3 font-bold hover:bg-transparent hover:text-gold-accent transition-colors disabled:bg-zinc-700 disabled:border-zinc-700 disabled:text-zinc-500 cursor-pointer"
+                    className="w-full bg-charcoal border border-charcoal text-alabaster py-3 font-bold hover:bg-transparent hover:text-charcoal transition-colors disabled:bg-zinc-300 disabled:border-zinc-300 disabled:text-zinc-500 cursor-pointer rounded-lg shadow-sm"
                   >
-                    {status === "submitting" ? "TRANSMITTING_PAYLOAD..." : "DISPATCH_PROJECT_LEDGER_"}
+                    {status === "submitting" ? "TRANSMITTING DATA..." : "DISPATCH PROJECT LEDGER"}
                   </button>
                 </div>
               </form>

@@ -7,7 +7,7 @@ export default function WorkIndex() {
       code: "KT-01",
       slug: "finflow-core",
       client: "Finflow Core Integration",
-      industry: "Trade Finance // Mumbai",
+      industry: "Trade Finance • Mumbai",
       duration: "12 Weeks",
       outcome: "Report latency: 14m &rarr; 3.8s",
       stack: "Next.js 14, NestJS, Postgres, Redis",
@@ -18,7 +18,7 @@ export default function WorkIndex() {
       code: "KT-02",
       slug: "edustack-lms",
       client: "Edustack Learning Platform",
-      industry: "Education Provider // Singapore",
+      industry: "Education Provider • Singapore",
       duration: "11 Weeks",
       outcome: "Manual invoice work: 240h &rarr; 0h",
       stack: "React, Node.js, AWS Lambda, Postgres",
@@ -29,7 +29,7 @@ export default function WorkIndex() {
       code: "KT-03",
       slug: "logitrack-api",
       client: "LogiTrack Tracker APIs",
-      industry: "Third-Party Logistics // Ahmedabad",
+      industry: "Third-Party Logistics • Ahmedabad",
       duration: "9 Weeks",
       outcome: "API failure rate: 35% &rarr; 0.02%",
       stack: "Go, FastAPI, PostgreSQL, TimescaleDB",
@@ -39,17 +39,17 @@ export default function WorkIndex() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-obsidian text-platinum py-12 px-6">
+    <div className="w-full min-h-screen bg-alabaster text-charcoal py-12 px-6">
       <div className="mx-auto max-w-7xl space-y-12">
         {/* Title */}
-        <div className="border-b border-zinc-border pb-8">
-          <span className="font-mono text-xs text-gold-accent tracking-widest uppercase block">
-            // MASTER_DIRECTORY
+        <div className="border-b border-sand-border pb-8">
+          <span className="font-mono text-xs text-amber-accent tracking-widest uppercase block">
+            Master Directory
           </span>
-          <h1 className="font-display text-4xl font-bold tracking-tight text-white mt-2">
+          <h1 className="font-serif text-4xl font-normal text-charcoal mt-2">
             Completed Technical Systems
           </h1>
-          <p className="font-sans text-xs text-steel mt-2 max-w-md">
+          <p className="font-sans text-xs text-muted-slate mt-2 max-w-md">
             A chronological list of custom codebases delivered. We maintain no NDAs that block sharing performance outcomes and system post-mortems.
           </p>
         </div>
@@ -59,10 +59,10 @@ export default function WorkIndex() {
           {projects.map((project) => (
             <div
               key={project.slug}
-              className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b border-zinc-border/50 pb-12 last:border-0"
+              className="group grid grid-cols-1 lg:grid-cols-12 gap-8 items-start border-b border-sand-border/50 pb-12 last:border-0"
             >
               {/* Image Column */}
-              <div className="lg:col-span-4 relative aspect-[3/2] w-full overflow-hidden border border-zinc-border group-hover:border-gold-accent transition-colors duration-300 bg-graphite">
+              <div className="lg:col-span-4 relative aspect-[3/2] w-full overflow-hidden border border-sand-border group-hover:border-amber-accent transition-colors duration-300 bg-sandstone rounded-xl">
                 <Image
                   src={project.image}
                   alt={project.client}
@@ -78,48 +78,48 @@ export default function WorkIndex() {
                 <div className="space-y-4">
                   {/* Status Strip */}
                   <div className="flex flex-wrap items-center gap-4 font-mono text-[10px]">
-                    <span className="bg-[#18181B] border border-zinc-border text-steel px-2 py-0.5">
+                    <span className="bg-sandstone border border-sand-border text-muted-slate px-2 py-0.5 rounded">
                       CODE: {project.code}
                     </span>
-                    <span className="text-gold-accent font-bold">
+                    <span className="text-amber-accent font-bold">
                       {project.industry}
                     </span>
-                    <span className="text-zinc-500">
+                    <span className="text-muted-slate">
                       DURATION: {project.duration}
                     </span>
                   </div>
 
                   {/* Client title */}
-                  <h2 className="font-display text-2xl font-bold text-white group-hover:text-gold-accent transition-colors duration-200">
+                  <h2 className="font-serif text-2xl font-normal text-charcoal group-hover:text-amber-accent transition-colors duration-200">
                     {project.client}
                   </h2>
 
                   {/* Summary */}
-                  <p className="font-sans text-xs text-steel max-w-xl leading-relaxed">
+                  <p className="font-sans text-xs text-muted-slate max-w-xl leading-relaxed">
                     {project.summary}
                   </p>
 
                   {/* Outcome block */}
-                  <div className="border-l-2 border-emerald-500 pl-4 bg-emerald-500/5 py-2 inline-block">
-                    <span className="font-mono text-[9px] text-zinc-500 block">MEASURABLE OUTCOME</span>
-                    <span className="font-mono text-xs font-bold text-emerald-400" dangerouslySetInnerHTML={{ __html: project.outcome }}></span>
+                  <div className="border-l-2 border-emerald-600 pl-4 bg-emerald-500/5 py-2 inline-block rounded-r">
+                    <span className="font-mono text-[8px] text-zinc-500 block font-bold">MEASURABLE OUTCOME</span>
+                    <span className="font-mono text-xs font-bold text-emerald-700" dangerouslySetInnerHTML={{ __html: project.outcome }}></span>
                   </div>
                 </div>
 
                 {/* Tech tag list & CTA */}
-                <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-zinc-border/40">
+                <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-sand-border/60">
                   <div className="flex flex-wrap gap-2">
                     {project.stack.split(", ").map((tech) => (
-                      <span key={tech} className="font-mono text-[9px] text-zinc-500 bg-[#18181B] px-2 py-0.5 border border-zinc-border/60">
+                      <span key={tech} className="font-mono text-[9px] text-muted-slate bg-sandstone px-2 py-0.5 border border-sand-border/80 rounded">
                         {tech}
                       </span>
                     ))}
                   </div>
                   <Link
                     href={`/work/${project.slug}`}
-                    className="font-mono text-xs text-white hover:text-gold-accent flex items-center gap-2 group cursor-pointer"
+                    className="font-mono text-xs text-charcoal hover:text-amber-accent flex items-center gap-2 group cursor-pointer"
                   >
-                    INSPECT_CODEBASE_PARAMS_
+                    INSPECT CODEBASE PARAMS
                     <span className="group-hover:translate-x-1 transition-transform">&rarr;</span>
                   </Link>
                 </div>

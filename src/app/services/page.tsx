@@ -37,17 +37,17 @@ export default function Services() {
   ];
 
   return (
-    <div className="w-full min-h-screen bg-obsidian text-platinum py-12 px-6">
+    <div className="w-full min-h-screen bg-alabaster text-charcoal py-12 px-6">
       <div className="mx-auto max-w-7xl space-y-12">
         {/* Title */}
-        <div className="border-b border-zinc-border pb-8">
-          <span className="font-mono text-xs text-gold-accent tracking-widest uppercase block">
-            // SERVICE_LEDGER
+        <div className="border-b border-sand-border pb-8">
+          <span className="font-mono text-xs text-amber-accent tracking-widest uppercase block">
+            Service Ledger
           </span>
-          <h1 className="font-display text-4xl font-bold tracking-tight text-white mt-2">
+          <h1 className="font-serif text-4xl font-normal text-charcoal mt-2">
             Engineering Capabilities & Pricing
           </h1>
-          <p className="font-sans text-xs text-steel mt-2 max-w-md">
+          <p className="font-sans text-xs text-muted-slate mt-2 max-w-md">
             We price strictly by work scope and delivery timeline. We maintain no retainer models or vague monthly billings.
           </p>
         </div>
@@ -57,33 +57,33 @@ export default function Services() {
           {capabilities.map((cap) => (
             <div
               key={cap.id}
-              className="border border-zinc-border bg-graphite p-6 flex flex-col justify-between space-y-6"
+              className="border border-sand-border bg-sandstone/60 p-6 flex flex-col justify-between space-y-6 rounded-xl shadow-sm hover:border-amber-accent/40 transition-colors"
             >
               <div className="space-y-4">
-                <div className="flex justify-between items-center text-[10px] font-mono text-steel">
+                <div className="flex justify-between items-center text-[10px] font-mono text-muted-slate">
                   <span>CAPABILITY: {cap.id}</span>
-                  <span className="text-gold-accent font-bold">ESTIMATED</span>
+                  <span className="text-amber-accent font-bold">ESTIMATED</span>
                 </div>
-                <h3 className="font-display text-2xl font-bold text-white tracking-wide">
+                <h3 className="font-serif text-2xl text-charcoal font-medium">
                   {cap.title}
                 </h3>
-                <p className="font-sans text-xs text-steel leading-relaxed">
-                  <span className="font-mono text-[9px] text-zinc-500 block">// WHAT WE DELIVER:</span>
+                <p className="font-sans text-xs text-muted-slate leading-relaxed">
+                  <span className="font-mono text-[9px] text-zinc-500 block font-bold">WHAT WE DELIVER:</span>
                   {cap.deliverable}
                 </p>
-                <div className="font-mono text-[10px] text-zinc-400">
-                  <span className="text-zinc-500">// SUGGESTED STACK:</span> {cap.stack}
+                <div className="font-mono text-[10px] text-muted-slate">
+                  <span className="text-zinc-500">SUGGESTED STACK:</span> {cap.stack}
                 </div>
               </div>
 
-              <div className="pt-4 border-t border-zinc-border/40 grid grid-cols-2 gap-4 font-mono text-[10px]">
+              <div className="pt-4 border-t border-sand-border/60 grid grid-cols-2 gap-4 font-mono text-[10px]">
                 <div>
-                  <span className="text-zinc-500 block">DELIVERY SCHEDULE</span>
-                  <span className="text-white font-bold">{cap.deliveryTime}</span>
+                  <span className="text-muted-slate block">DELIVERY SCHEDULE</span>
+                  <span className="text-charcoal font-bold">{cap.deliveryTime}</span>
                 </div>
                 <div>
-                  <span className="text-gold-accent block font-bold">COST ESTIMATE</span>
-                  <span className="text-white font-bold">{cap.priceRange}</span>
+                  <span className="text-amber-accent block font-bold">COST ESTIMATE</span>
+                  <span className="text-charcoal font-bold">{cap.priceRange}</span>
                 </div>
               </div>
             </div>
@@ -91,26 +91,26 @@ export default function Services() {
         </div>
 
         {/* Pricing Dynamics Explanation */}
-        <div className="border border-zinc-border bg-[#0E0E10] p-8 space-y-6">
-          <div className="font-mono text-xs text-gold-accent tracking-widest uppercase">
-            // PRICING_POSTURE_BREAKDOWN
+        <div className="border border-sand-border bg-sandstone/30 p-8 space-y-6 rounded-2xl">
+          <div className="font-mono text-xs text-amber-accent tracking-widest uppercase">
+            Pricing Posture Breakdown
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="space-y-2">
-              <h4 className="font-display text-base font-bold text-white">// 01_PROJECT_MINIMUMS</h4>
-              <p className="font-sans text-xs text-steel leading-relaxed">
+              <h4 className="font-serif text-lg text-charcoal font-medium">01. Project Minimums</h4>
+              <p className="font-sans text-xs text-muted-slate leading-relaxed">
                 Our minimum engagement value is $15,000. We do not take on simple website edits or quick layout modifications unless they are part of a broader codebase migration.
               </p>
             </div>
             <div className="space-y-2">
-              <h4 className="font-display text-base font-bold text-white">// 02_VARIABLES_INFLATING_COST</h4>
-              <p className="font-sans text-xs text-steel leading-relaxed">
+              <h4 className="font-serif text-lg text-charcoal font-medium">02. Variables Inflating Cost</h4>
+              <p className="font-sans text-xs text-muted-slate leading-relaxed">
                 Integrating poorly documented third-party vendor APIs, legacy databases requiring complex manual cleanses, and high-availability clustered deployments.
               </p>
             </div>
             <div className="space-y-2">
-              <h4 className="font-display text-base font-bold text-white">// 03_INCLUDED_IN_ALL_PROJECTS</h4>
-              <p className="font-sans text-xs text-steel leading-relaxed">
+              <h4 className="font-serif text-lg text-charcoal font-medium">03. Included in All Projects</h4>
+              <p className="font-sans text-xs text-muted-slate leading-relaxed">
                 Full repository transfer, 60 days of post-release defect support, automated build verify scripts, and detailed system documentation charts.
               </p>
             </div>
@@ -118,16 +118,16 @@ export default function Services() {
         </div>
 
         {/* Call to Action */}
-        <div className="border border-zinc-border bg-graphite p-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+        <div className="border border-sand-border bg-sandstone/80 p-8 flex flex-col sm:flex-row justify-between items-center gap-6 rounded-xl">
           <div className="space-y-1">
-            <h3 className="font-display text-lg font-bold text-white">// PREPARE_A_FORMAL_PROJECT_ESTIMATE</h3>
-            <p className="font-sans text-xs text-steel">
+            <h3 className="font-serif text-xl text-charcoal font-medium">Prepare a Formal Project Estimate</h3>
+            <p className="font-sans text-xs text-muted-slate">
               We review API specs and databases before quoting. Zero upfront sales commitments.
             </p>
           </div>
           <Link
             href="/contact"
-            className="bg-gold-accent border border-gold-accent text-obsidian px-6 py-3 font-mono text-xs font-bold hover:bg-transparent hover:text-gold-accent transition-colors duration-200 cursor-pointer"
+            className="bg-charcoal border border-charcoal text-alabaster px-6 py-3 font-mono text-xs font-bold hover:bg-transparent hover:text-charcoal transition-colors duration-200 cursor-pointer rounded-lg shadow-sm"
           >
             REQUEST FIXED QUOTE
           </Link>

@@ -48,15 +48,15 @@ const CASE_STUDIES: Record<
     `,
     sections: [
       {
-        heading: "01 // THE SYSTEM BLOCK",
+        heading: "01. The System Block",
         body: "The client ran transaction reconciliations using cron jobs. When trade volume surged, the database encountered locks on the ledger tables. Compliance officers sat idle waiting for 14-minute exports which frequently crashed."
       },
       {
-        heading: "02 // STRUCTURAL REBUILD",
+        heading: "02. Structural Rebuild",
         body: "We rewrote the transaction scheduler into a decoupled query pipeline. By separating operational transaction records from compliance reporting schemas, we eliminated DB table contention."
       },
       {
-        heading: "03 // METRIC VALIDATION",
+        heading: "03. Metric Validation",
         body: "Production logs show report latency now averages 3.8 seconds, even during peak trading windows. Concurrent transaction handling capacity grew 160x without database CPU throttling."
       }
     ]
@@ -91,15 +91,15 @@ const CASE_STUDIES: Record<
     `,
     sections: [
       {
-        heading: "01 // MANUAL INEFFICIENCY",
+        heading: "01. Manual Inefficiency",
         body: "Center operations relied on printouts to track attendance. Lost sheets caused invoice errors, leading to parent complaints and manual calculation reviews."
       },
       {
-        heading: "02 // DOUBLE-ENTRY INTEGRITY",
+        heading: "02. Double-Entry Integrity",
         body: "The new module maps every scan directly to ledger entries. A parent wallet cannot execute balance transfers without ledger approval, guaranteeing audit compliance."
       },
       {
-        heading: "03 // OPERATIONAL EFFICIENCY",
+        heading: "03. Operational Efficiency",
         body: "Finance staff went from executing 240 hours of manual reconciliation monthly to zero hours. Invoices compile automatically in the background at midnight on the 28th."
       }
     ]
@@ -134,15 +134,15 @@ const CASE_STUDIES: Record<
     `,
     sections: [
       {
-        heading: "01 // Telemetry Bottleneck",
+        heading: "01. Telemetry Bottleneck",
         body: "Logistics hardware sent position coordinates every 10 seconds. The relational DB couldn't handle bulk inserts while generating routes, collapsing the service during peak transit hours."
       },
       {
-        heading: "02 // Time-Series Migration",
+        heading: "02. Time-Series Migration",
         body: "We replaced the coordinates table with TimescaleDB partition tables. This allowed position records to be written sequentially in time blocks without global indexing latency."
       },
       {
-        heading: "03 // Infrastructure Stability",
+        heading: "03. Infrastructure Stability",
         body: "P99 API response latencies dropped from 4.2 seconds to 120ms. The system has run stably at 0.02% error rate since deployment, processing 14 million telemetry points daily."
       }
     ]
@@ -160,27 +160,27 @@ export default async function WorkDetail({ params }: { params: Params }) {
   }
 
   return (
-    <div className="w-full min-h-screen bg-obsidian text-platinum py-12 px-6">
+    <div className="w-full min-h-screen bg-alabaster text-charcoal py-12 px-6">
       <div className="mx-auto max-w-7xl space-y-12">
         {/* Navigation Back */}
         <div>
-          <Link href="/work" className="font-mono text-xs text-steel hover:text-gold-accent flex items-center gap-2 cursor-pointer">
-            &larr; BACK_TO_DIRECTORY_
+          <Link href="/work" className="font-mono text-xs text-muted-slate hover:text-amber-accent flex items-center gap-2 cursor-pointer">
+            &larr; BACK TO DIRECTORY
           </Link>
         </div>
 
         {/* Hero image and title block */}
         <div className="space-y-6">
-          <div className="flex items-center justify-between border-b border-zinc-border pb-4 text-xs font-mono text-steel">
+          <div className="flex items-center justify-between border-b border-sand-border pb-4 text-xs font-mono text-muted-slate">
             <span>PROJECT: {project.code}</span>
-            <span>STATUS: STABLE_RELEASE</span>
+            <span>STATUS: STABLE RELEASE</span>
           </div>
 
-          <h1 className="font-display text-3xl md:text-5xl font-bold tracking-tight text-white leading-tight">
+          <h1 className="font-serif text-3xl md:text-5xl font-normal text-charcoal leading-tight">
             {project.title}
           </h1>
 
-          <div className="relative aspect-[21/9] w-full overflow-hidden border border-zinc-border bg-graphite">
+          <div className="relative aspect-[21/9] w-full overflow-hidden border border-sand-border bg-sandstone rounded-xl">
             <Image
               src={project.image}
               alt={project.title}
@@ -194,37 +194,37 @@ export default async function WorkDetail({ params }: { params: Params }) {
         {/* Story Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
           {/* Left Column: Spec Sheet */}
-          <div className="lg:col-span-4 border border-zinc-border bg-graphite p-6 space-y-6">
-            <div className="font-mono text-xs text-gold-accent tracking-widest uppercase pb-2 border-b border-zinc-border">
-              // SPECIFICATION_LEDGER
+          <div className="lg:col-span-4 border border-sand-border bg-sandstone p-6 space-y-6 rounded-xl">
+            <div className="font-mono text-xs text-amber-accent tracking-widest uppercase pb-2 border-b border-sand-border/60">
+              Specification Ledger
             </div>
 
             <div className="space-y-4 font-sans text-xs">
               <div>
-                <span className="font-mono text-[9px] text-zinc-500 block">CLIENT</span>
-                <span className="text-white font-bold">{project.client}</span>
+                <span className="font-mono text-[9px] text-muted-slate block font-bold">CLIENT</span>
+                <span className="text-charcoal font-bold">{project.client}</span>
               </div>
               <div>
-                <span className="font-mono text-[9px] text-zinc-500 block">LOCATION</span>
-                <span className="text-white">{project.location}</span>
+                <span className="font-mono text-[9px] text-muted-slate block font-bold">LOCATION</span>
+                <span className="text-charcoal">{project.location}</span>
               </div>
               <div>
-                <span className="font-mono text-[9px] text-zinc-500 block">TIMELINE</span>
-                <span className="text-white">{project.duration}</span>
+                <span className="font-mono text-[9px] text-muted-slate block font-bold">TIMELINE</span>
+                <span className="text-charcoal">{project.duration}</span>
               </div>
               <div>
-                <span className="font-mono text-[9px] text-zinc-500 block">PRIMARY STACK</span>
+                <span className="font-mono text-[9px] text-muted-slate block font-bold">PRIMARY STACK</span>
                 <div className="flex flex-wrap gap-1 mt-1">
                   {project.stack.map((tech) => (
-                    <span key={tech} className="font-mono text-[9px] bg-obsidian px-1.5 py-0.5 border border-zinc-border">
+                    <span key={tech} className="font-mono text-[9px] bg-alabaster px-1.5 py-0.5 border border-sand-border rounded">
                       {tech}
                     </span>
                   ))}
                 </div>
               </div>
-              <div className="border-t border-zinc-border/40 pt-4">
-                <span className="font-mono text-[9px] text-emerald-500 block">VERIFIED METRIC OUTCOME</span>
-                <span className="text-emerald-400 font-mono font-bold leading-relaxed">{project.metric}</span>
+              <div className="border-t border-sand-border/60 pt-4">
+                <span className="font-mono text-[9px] text-emerald-700 block font-bold">VERIFIED METRIC OUTCOME</span>
+                <span className="text-emerald-700 font-mono font-bold leading-relaxed">{project.metric.replace(" // ", " • ")}</span>
               </div>
             </div>
           </div>
@@ -234,19 +234,19 @@ export default async function WorkDetail({ params }: { params: Params }) {
             {/* Legacy vs Rebuild */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-2">
-                <h3 className="font-mono text-xs font-bold text-zinc-400 uppercase">// LEGACY_BLOCK</h3>
-                <p className="font-sans text-xs text-steel leading-relaxed">{project.legacy}</p>
+                <h3 className="font-mono text-xs font-bold text-muted-slate uppercase">Legacy Architecture</h3>
+                <p className="font-sans text-xs text-muted-slate leading-relaxed">{project.legacy}</p>
               </div>
               <div className="space-y-2">
-                <h3 className="font-mono text-xs font-bold text-white uppercase">// REBUILT_STATE</h3>
-                <p className="font-sans text-xs text-steel leading-relaxed">{project.solution}</p>
+                <h3 className="font-mono text-xs font-bold text-charcoal uppercase">Rebuilt State</h3>
+                <p className="font-sans text-xs text-muted-slate leading-relaxed">{project.solution}</p>
               </div>
             </div>
 
             {/* ASCII Flow Chart */}
-            <div className="border border-zinc-border bg-obsidian p-6 space-y-4">
-              <span className="font-mono text-[10px] text-zinc-500 block">// ENGINE_FLOW_DIAGRAM</span>
-              <pre className="font-mono text-[10px] text-zinc-400 overflow-x-auto leading-relaxed select-none">
+            <div className="border border-[#222225] bg-obsidian p-6 space-y-4 rounded-xl shadow-lg">
+              <span className="font-mono text-[10px] text-zinc-500 block">System Flow Diagram</span>
+              <pre className="font-mono text-[10px] text-zinc-300 overflow-x-auto leading-relaxed select-none">
                 {project.flowChart}
               </pre>
             </div>
@@ -255,18 +255,18 @@ export default async function WorkDetail({ params }: { params: Params }) {
             <div className="space-y-8">
               {project.sections.map((section, idx) => (
                 <div key={idx} className="space-y-2">
-                  <h3 className="font-display text-lg font-bold text-white">{section.heading}</h3>
-                  <p className="font-sans text-xs text-steel leading-relaxed">{section.body}</p>
+                  <h3 className="font-serif text-lg text-charcoal font-medium">{section.heading}</h3>
+                  <p className="font-sans text-xs text-muted-slate leading-relaxed">{section.body}</p>
                 </div>
               ))}
             </div>
 
             {/* Post Mortem Warning block */}
-            <div className="border-l-2 border-gold-accent pl-6 py-4 bg-[#E2B875]/5 space-y-2">
-              <h3 className="font-mono text-xs font-bold text-gold-accent uppercase tracking-wider">
-                // SYSTEM_FAIL_REPORT (WEEK 6-9 ANALYSIS)
+            <div className="border-l-2 border-amber-accent pl-6 py-4 bg-sandstone/50 space-y-2 rounded-r">
+              <h3 className="font-mono text-xs font-bold text-amber-accent uppercase tracking-wider">
+                System Failure Report (Week 6-9 Analysis)
               </h3>
-              <p className="font-sans text-xs text-steel leading-relaxed">
+              <p className="font-sans text-xs text-muted-slate leading-relaxed">
                 {project.whatWentWrong}
               </p>
             </div>
@@ -274,12 +274,12 @@ export default async function WorkDetail({ params }: { params: Params }) {
         </div>
 
         {/* CTA Strip */}
-        <div className="border-t border-zinc-border pt-12 flex justify-between items-center">
-          <Link href="/work" className="font-mono text-xs text-steel hover:text-white cursor-pointer">
-            &larr; BACK_TO_DIRECTORY_
+        <div className="border-t border-sand-border pt-12 flex justify-between items-center">
+          <Link href="/work" className="font-mono text-xs text-muted-slate hover:text-charcoal cursor-pointer">
+            &larr; BACK TO DIRECTORY
           </Link>
-          <Link href="/contact" className="border border-gold-accent bg-gold-accent text-obsidian px-6 py-2.5 font-mono text-xs font-bold hover:bg-transparent hover:text-gold-accent transition-colors cursor-pointer">
-            ESTIMATE_SIMILAR_PROJECT_ &rarr;
+          <Link href="/contact" className="border border-charcoal bg-charcoal text-alabaster px-6 py-2.5 font-mono text-xs font-bold hover:bg-transparent hover:text-charcoal transition-colors cursor-pointer rounded-lg">
+            ESTIMATE SIMILAR PROJECT &rarr;
           </Link>
         </div>
       </div>
