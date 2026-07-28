@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-plus-jakarta-sans), sans-serif;
+  --font-display: var(--font-space-grotesk), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  --color-obsidian: #0B0B0C;
+  --color-graphite: #141416;
+  --color-zinc-border: #27272A;
+  --color-platinum: #FAFAFA;
+  --color-steel: #A1A1AA;
+  --color-gold-accent: #E2B875;
+}
+
+:root {
+  --background: #0B0B0C;
+  --foreground: #FAFAFA;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+/* Custom technical styling utilities */
+.technical-grid {
+  background-image: 
+    linear-gradient(to right, rgba(39, 39, 42, 0.2) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(39, 39, 42, 0.2) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.glow-subtle {
+  box-shadow: 0 0 15px -3px rgba(226, 184, 117, 0.1);
+}
+
+/* Monospace scanline or cursor animations */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
