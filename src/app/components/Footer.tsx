@@ -100,7 +100,7 @@ export default function Footer() {
           
           <div className="font-mono text-[9px] text-muted-slate flex space-x-6">
             <span>
-              CALL: <a href="tel:+919265739137" className="hover:text-amber-accent transition-colors">+91 92657 39137</a>
+              CALL: <a href="tel:+17572355070" className="hover:text-amber-accent transition-colors">+1 (757) 235-5070</a>
             </span>
             <span>
               WRITE: <a href="mailto:support@kolitech.in" className="hover:text-amber-accent transition-colors">support@kolitech.in</a>

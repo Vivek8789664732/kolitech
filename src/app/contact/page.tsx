@@ -62,15 +62,15 @@ export default function Contact() {
 
                 <div>
                   <span className="font-mono text-[9px] text-muted-slate block font-bold">MOBILE VOICE</span>
-                  <a href="tel:+919265739137" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors">
-                    +91 92657 39137
+                  <a href="tel:+17572355070" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors">
+                    +1 (757) 235-5070
                   </a>
                 </div>
 
                 <div>
                   <span className="font-mono text-[9px] text-muted-slate block font-bold">WHATSAPP DIRECT</span>
                   <a 
-                    href="https://wa.me/919265739137" 
+                    href="https://wa.me/17572355070" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-emerald-700 hover:text-amber-accent font-mono font-bold transition-colors inline-flex items-center gap-1.5"
