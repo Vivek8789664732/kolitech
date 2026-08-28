@@ -266,10 +266,10 @@ export default function Home() {
                   Estimation Criteria
                 </span>
                 <h2 className="font-serif text-2xl md:text-3xl font-normal text-charcoal tracking-tight">
-                  Pricing ranges from $15k to $80k. We don&apos;t hide pricing.
+                  Pricing ranges from 15k to 80k. We don&apos;t hide pricing.
                 </h2>
                 <p className="font-sans text-xs md:text-sm text-muted-slate leading-relaxed max-w-xl">
-                  A custom transaction database with NestJS APIs takes about 11-12 weeks and lands near $25,000. Basic technical platforms start at $15,000. Comprehensive web integrations with high-volume SLAs scale to $80,000.
+                  A custom transaction database with NestJS APIs takes about 11-12 weeks and lands near 25,000. Basic technical platforms start at 15,000. Comprehensive web integrations with high-volume SLAs scale to 80,000.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-[9px] text-muted-slate">
                   <div>

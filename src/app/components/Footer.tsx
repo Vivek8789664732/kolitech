@@ -95,7 +95,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-sand-border/60 flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
           <div className="font-mono text-[9px] text-zinc-500">
-            &copy; {currentYear} KOLITECH.
+            &copy; {currentYear} Koli Tech by Monika Koli.
           </div>
           
           <div className="font-mono text-[9px] text-muted-slate flex space-x-6">

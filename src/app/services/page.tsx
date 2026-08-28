@@ -8,7 +8,7 @@ export default function Services() {
       deliverable: "High-concurrency API server with integrated request throttling, failovers, and client authorization headers.",
       stack: "Go (Golang), FastAPI, NestJS, PM2, Docker",
       deliveryTime: "6 to 8 Weeks",
-      priceRange: "$15,000 - $30,000"
+      priceRange: "15,000 - 30,000"
     },
     {
       id: "C-02",
@@ -16,7 +16,7 @@ export default function Services() {
       deliverable: "Custom relational databases or telemetry clusters. Fully indexed tables, partition structures, and automatic compression scripts.",
       stack: "PostgreSQL, TimescaleDB, Redis, Timescale Cloud",
       deliveryTime: "4 to 6 Weeks",
-      priceRange: "$12,000 - $25,000"
+      priceRange: "12,000 - 25,000"
     },
     {
       id: "C-03",
@@ -24,7 +24,7 @@ export default function Services() {
       deliverable: "Dedicated web interfaces with secure layouts, server side fetching rules, TypeScript schema integrity, and fully responsive layouts.",
       stack: "Next.js 14/15/16, Tailwind CSS, TypeScript",
       deliveryTime: "6 to 10 Weeks",
-      priceRange: "$18,000 - $40,000"
+      priceRange: "18,000 - 40,000"
     },
     {
       id: "C-04",
@@ -32,7 +32,7 @@ export default function Services() {
       deliverable: "Automated cron workers or messaging queues that import legacy spreadsheets, sync inventory registers, or migrate relational assets.",
       stack: "RabbitMQ, BullMQ, Redis, Node.js scripts",
       deliveryTime: "3 to 5 Weeks",
-      priceRange: "$10,000 - $20,000"
+      priceRange: "10,000 - 20,000"
     }
   ];
 
@@ -99,7 +99,7 @@ export default function Services() {
             <div className="space-y-2">
               <h4 className="font-serif text-lg text-charcoal font-medium">01. Project Minimums</h4>
               <p className="font-sans text-xs text-muted-slate leading-relaxed">
-                Our minimum engagement value is $15,000. We do not take on simple website edits or quick layout modifications unless they are part of a broader codebase migration.
+                Our minimum engagement value is 15,000. We do not take on simple website edits or quick layout modifications unless they are part of a broader codebase migration.
               </p>
             </div>
             <div className="space-y-2">

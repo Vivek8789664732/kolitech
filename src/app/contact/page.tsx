@@ -6,7 +6,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    budget: "$15,000 - $30,000",
+    budget: "15,000 - 30,000",
     legacyDetails: "",
     description: ""
   });
@@ -114,7 +114,7 @@ export default function Contact() {
                     setFormData({
                       name: "",
                       email: "",
-                      budget: "$15,000 - $30,000",
+                      budget: "15,000 - 30,000",
                       legacyDetails: "",
                       description: ""
                     });
@@ -170,9 +170,9 @@ export default function Contact() {
                     disabled={status === "submitting"}
                     className="bg-alabaster border border-sand-border px-3 py-2 text-charcoal focus:border-amber-accent focus:outline-none transition-colors rounded-lg"
                   >
-                    <option value="$15,000 - $30,000">$15,000 - $30,000 (Standard API/Database Rebuild)</option>
-                    <option value="$30,000 - $60,000">$30,000 - $60,000 (Complete Platform Migration)</option>
-                    <option value="$60,000+">$60,000+ (High Availability Core Clusters)</option>
+                    <option value="15,000 - 30,000">15,000 - 30,000 (Standard API/Database Rebuild)</option>
+                    <option value="30,000 - 60,000">30,000 - 60,000 (Complete Platform Migration)</option>
+                    <option value="60,000+">60,000+ (High Availability Core Clusters)</option>
                   </select>
                 </div>
 
