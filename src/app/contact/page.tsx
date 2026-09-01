@@ -82,10 +82,9 @@ export default function Contact() {
                 <div>
                   <span className="font-mono text-[9px] text-muted-slate block font-bold">PHYSICAL ADDRESS</span>
                   <p className="text-charcoal leading-relaxed font-mono">
-                    Shop no C 2 Sai pujan residency,<br />
-                    Mangal Nagar, Near Sky 9 Link Road,<br />
-                    Nilgiri, Limbayat, Surat, Gujarat, India<br />
-                    Pin: 395012
+                    Shop no C-2 Sai pujan Residency,<br />
+                    Dindoli Link road, Surat, Gujarat, India<br />
+                    Pin: 394210
                   </p>
                 </div>
               </div>
