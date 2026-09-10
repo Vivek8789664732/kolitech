@@ -22,9 +22,6 @@ export default function Footer() {
             <p className="font-sans text-xs text-muted-slate max-w-sm leading-relaxed">
               We engineer custom software systems, scalable backends, and performance-tuned APIs. We write dedicated, clean code tailored strictly to your operations.
             </p>
-            <div className="font-mono text-[9px] text-muted-slate">
-              REGISTERED SYSTEM • SURAT, GUJARAT, IN
-            </div>
           </div>
 
           {/* Navigation Column */}

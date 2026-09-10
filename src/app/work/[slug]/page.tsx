@@ -9,7 +9,6 @@ const CASE_STUDIES: Record<
     code: string;
     title: string;
     client: string;
-    location: string;
     duration: string;
     metric: string;
     stack: string[];
@@ -25,7 +24,6 @@ const CASE_STUDIES: Record<
     code: "KT-01",
     title: "Trade Finance Core Engine Migration",
     client: "Trade Finance Brokerage",
-    location: "Mumbai, India",
     duration: "12 Weeks",
     metric: "Latency: 14.2m -> 3.8s // Capacity: 50 -> 8,000 req/sec",
     stack: ["Next.js 14", "NestJS", "PostgreSQL", "Redis", "Docker"],
@@ -65,7 +63,6 @@ const CASE_STUDIES: Record<
     code: "KT-02",
     title: "Attendance & Ledger Platform Integration",
     client: "Edustack Holdings",
-    location: "Singapore",
     duration: "11 Weeks",
     metric: "Manual Invoice Work: 240h -> 0h // Zero Error Rates",
     stack: ["React", "Node.js", "AWS Lambda", "PostgreSQL", "Serverless"],
@@ -108,7 +105,6 @@ const CASE_STUDIES: Record<
     code: "KT-03",
     title: "High-Throughput Route Tracking APIs",
     client: "LogiTrack Logistics",
-    location: "Ahmedabad, India",
     duration: "9 Weeks",
     metric: "API Failure Rate: 35% -> 0.02% // Latency: 4.2s -> 120ms",
     stack: ["Go", "FastAPI", "PostgreSQL", "TimescaleDB", "Timescale Cloud"],
@@ -203,10 +199,6 @@ export default async function WorkDetail({ params }: { params: Params }) {
               <div>
                 <span className="font-mono text-[9px] text-muted-slate block font-bold">CLIENT</span>
                 <span className="text-charcoal font-bold">{project.client}</span>
-              </div>
-              <div>
-                <span className="font-mono text-[9px] text-muted-slate block font-bold">LOCATION</span>
-                <span className="text-charcoal">{project.location}</span>
               </div>
               <div>
                 <span className="font-mono text-[9px] text-muted-slate block font-bold">TIMELINE</span>

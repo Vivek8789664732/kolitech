@@ -105,7 +105,7 @@ export default function Terms() {
             <section id="disputes" className="space-y-3 scroll-mt-28">
               <h2 className="font-serif text-lg text-charcoal font-medium">8. Governing Law & Dispute Resolution</h2>
               <p>
-                These terms are governed by the laws of India. Any legal dispute or breach claim will be resolved under the exclusive jurisdiction of the courts of Surat, Gujarat, India.
+                These terms are governed by standard commercial regulations. Any legal dispute or breach claim will be settled through standard binding commercial arbitration.
               </p>
             </section>
 
@@ -113,8 +113,8 @@ export default function Terms() {
             <div className="border border-sand-border bg-sandstone/40 p-6 space-y-4 font-mono text-[9px] rounded-xl">
               <div className="text-amber-accent font-bold">ACTION REQUIRED BY CLIENT LEGAL COUNSEL:</div>
               <ul className="space-y-2 text-muted-slate">
-                <li>1. [ACTION NEEDED: Verify that Surat, Gujarat is the correct legal venue for client dispute filings.]</li>
-                <li>2. [ACTION NEEDED: Review milestone payment definitions and late payment fee parameters for local compliance.]</li>
+                <li>1. [ACTION NEEDED: Confirm governing law and arbitration venue clauses with corporate counsel.]</li>
+                <li>2. [ACTION NEEDED: Review milestone payment definitions and late payment fee parameters for compliance.]</li>
               </ul>
             </div>
           </article>

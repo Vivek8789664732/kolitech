@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react";
 
 const LOG_LINES = [
   { type: "info", text: "Initializing Kolitech deploy pipeline [v2.4.1]..." },
-  { type: "info", text: "Target cluster node: production-surat-node-2" },
+  { type: "info", text: "Target cluster node: production-primary-node-2" },
   { type: "warning", text: "ANALYZING LEGACY SYSTEM: PHP 7.4 + MySQL 5.7" },
   { type: "warning", text: "Found 32 unindexed queries causing transaction blocks" },
   { type: "warning", text: "P99 latency: 14.2 minutes for standard compliance export" },
@@ -104,7 +104,7 @@ export default function CodeWindow() {
       {/* Footer Spec strip */}
       <div className="border-t border-[#222225] bg-[#1E1E21] px-4 py-1.5 flex items-center justify-between text-[9px] text-[#88888D]">
         <span>PID: 88762</span>
-        <span>CLUSTER: IN-WEST-1</span>
+        <span>CLUSTER: US-EAST-1</span>
         <span>UPTIME: 100.00%</span>
       </div>
     </div>

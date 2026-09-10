@@ -27,13 +27,13 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Kolitech — Custom Software Engineering Studio",
-  description: "We build custom systems, data pipelines, and high-performance APIs for companies that have outgrown generic software templates. Based in Surat.",
+  description: "We build custom systems, data pipelines, and high-performance APIs for companies that have outgrown generic software templates.",
   openGraph: {
     title: "Kolitech — Custom Software Engineering Studio",
     description: "We build custom systems, data pipelines, and high-performance APIs for companies that have outgrown generic software templates.",
     url: "https://kolitech.in",
     siteName: "Kolitech",
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
   },
 };

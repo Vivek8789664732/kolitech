@@ -5,7 +5,7 @@ export default function Home() {
   const caseStudies = [
     {
       code: "KT-01. FINFLOW",
-      client: "Trade finance company in Mumbai",
+      client: "Trade finance brokerage platform",
       challenge: "Legacy PHP system took 14 minutes to generate compliance reports; locked up under concurrent load.",
       stack: "Next.js 14, NestJS, PostgreSQL, Redis",
       metric: "Report generation reduced to 3.8 seconds. Peak capacity increased to 8,000 requests/sec.",
@@ -14,7 +14,7 @@ export default function Home() {
     },
     {
       code: "KT-02. EDUSTACK",
-      client: "Edtech provider in Singapore",
+      client: "Edtech learning platform",
       challenge: "Paper attendance and manual invoice reconciliation across 40 learning centres took 240 hours/month.",
       stack: "React, Node.js, AWS Lambda, PostgreSQL",
       metric: "Manual reconciliation time reduced to zero. Student attendance tracked via secure scan logs.",
@@ -23,7 +23,7 @@ export default function Home() {
     },
     {
       code: "KT-03. LOGITRACK",
-      client: "Third-party logistics firm in Ahmedabad",
+      client: "Third-party logistics network",
       challenge: "Real-time tracker API had 35% error rate during peaks due to unoptimized query loops.",
       stack: "Go, FastAPI, PostgreSQL, TimescaleDB",
       metric: "API failure rate reduced to 0.02%. P99 query latency decreased to 120ms.",

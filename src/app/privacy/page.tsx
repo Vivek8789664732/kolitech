@@ -4,7 +4,7 @@ export default function Privacy() {
   const lastUpdated = "July 28, 2026";
 
   const sections = [
-    { id: "dpdpa", title: "1. DPDP Act 2023 & GDPR Alignments" },
+    { id: "dataprotection", title: "1. Global Data Protection & GDPR Alignments" },
     { id: "collection", title: "2. Personal Data Collected" },
     { id: "processors", title: "3. Third-Party Data Processors" },
     { id: "retention", title: "4. Data Retention Limits" },
@@ -45,10 +45,10 @@ export default function Privacy() {
           <article className="lg:col-span-8 space-y-10 font-sans text-xs text-muted-slate leading-relaxed">
             
             {/* Section 1 */}
-            <section id="dpdpa" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">1. DPDP Act 2023 & GDPR Alignments</h2>
+            <section id="dataprotection" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">1. Global Data Protection & GDPR Alignments</h2>
               <p>
-                Kolitech operates in accordance with India&apos;s Digital Personal Data Protection (DPDP) Act 2023. For visitors residing in the European Union (EU) or the United Kingdom (UK), our operations are designed to satisfy GDPR standards regarding legal bases for data collection and user rights.
+                Kolitech operates in accordance with recognized international data protection principles. For visitors residing internationally, including the European Union (EU) or the United Kingdom (UK), our operations satisfy GDPR standards regarding legal bases for data collection and user rights.
               </p>
             </section>
 
@@ -104,7 +104,7 @@ export default function Privacy() {
             <section id="retention" className="space-y-3 scroll-mt-28">
               <h2 className="font-serif text-lg text-charcoal font-medium">4. Data Retention Limits</h2>
               <p>
-                We store project scoping logs and contract drafts for up to two years from the initial connection date. Inactive client databases are deleted after 180 days. Corporate financial data and GST billing ledgers are retained for seven years as required by Indian tax codes.
+                We store project scoping logs and contract drafts for up to two years from the initial connection date. Inactive client databases are deleted after 180 days. Corporate financial data and billing records are retained for statutory retention periods as required by applicable commercial regulations.
               </p>
             </section>
 
@@ -144,7 +144,7 @@ export default function Privacy() {
             <section id="grievance" className="space-y-3 scroll-mt-28">
               <h2 className="font-serif text-lg text-charcoal font-medium">7. Grievance Redressal SLA</h2>
               <p>
-                Under DPDP guidelines, we maintain a dedicated Grievance Officer. For disputes regarding data usage, contact:
+                We maintain a dedicated Privacy &amp; Grievance Officer. For disputes or inquiries regarding data usage, contact:
               </p>
               <div className="bg-sandstone border border-sand-border p-4 font-mono text-[9px] space-y-1 text-charcoal rounded-xl">
                 <div>GRIEVANCE OFFICER: Vivek</div>
@@ -157,7 +157,7 @@ export default function Privacy() {
             <div className="border border-sand-border bg-sandstone/40 p-6 space-y-4 font-mono text-[9px] rounded-xl">
               <div className="text-amber-accent font-bold">ACTION REQUIRED BY CLIENT LEGAL COUNSEL:</div>
               <ul className="space-y-2 text-muted-slate">
-                <li>1. [ACTION NEEDED: Register Vivek as Grievance Officer with the local authorities once operations cross statutory limits.]</li>
+                <li>1. [ACTION NEEDED: Confirm privacy officer designations with corporate legal counsel.]</li>
                 <li>2. [ACTION NEEDED: Deploy a standard cookie consent banner if any analytical tools like Google Analytics or Hotjar are added later.]</li>
               </ul>
             </div>

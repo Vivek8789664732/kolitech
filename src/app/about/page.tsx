@@ -20,7 +20,7 @@ export default function About() {
             The Kolitech Operating Studio
           </h1>
           <p className="font-sans text-xs text-muted-slate mt-2 max-w-md">
-            We are an engineering-driven shop based in Surat building custom software systems.
+            We are an engineering-driven shop building custom software systems.
           </p>
         </div>
 
@@ -38,7 +38,7 @@ export default function About() {
               Our studio operates under a simple guideline: we do not utilize drag-and-drop systems, we write native database queries, and we do not use third-party code templates. You own 100% of the repository we compile for you.
             </p>
             <p>
-              Operating from Surat, Gujarat, places us near key logistical and industrial hubs. This environment shapes our focus on data operations, database compression, and performance-first API codebases rather than marketing metrics.
+              Our engineering philosophy shapes our focus on data operations, database compression, and performance-first API codebases rather than marketing metrics.
             </p>
 
             <div className="border border-sand-border bg-sandstone/60 p-6 space-y-4 font-mono text-[10px] mt-8 rounded-xl">
@@ -78,18 +78,14 @@ export default function About() {
         </div>
 
         {/* Studio parameters ledger */}
-        <div className="border border-sand-border p-6 grid grid-cols-2 md:grid-cols-4 gap-6 font-mono text-[9px] bg-sandstone/40 rounded-xl">
-          <div>
-            <span className="text-muted-slate block">LOCATION</span>
-            <span className="text-charcoal font-bold">SURAT, IN</span>
-          </div>
+        <div className="border border-sand-border p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 font-mono text-[9px] bg-sandstone/40 rounded-xl">
           <div>
             <span className="text-muted-slate block">DELIVERED SYSTEMS</span>
             <span className="text-charcoal font-bold">18 PRODUCTION UNITS</span>
           </div>
           <div>
-            <span className="text-muted-slate block">PRIMARY LOCATION</span>
-            <span className="text-charcoal font-bold">SURAT, GUJARAT</span>
+            <span className="text-muted-slate block">AVERAGE P99 RESPONSE</span>
+            <span className="text-charcoal font-bold">SUB-120MS</span>
           </div>
           <div>
             <span className="text-muted-slate block">RECONCILIATION SLA</span>
