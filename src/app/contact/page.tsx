@@ -62,21 +62,45 @@ export default function Contact() {
 
                 <div>
                   <span className="font-mono text-[9px] text-muted-slate block font-bold">MOBILE VOICE</span>
-                  <a href="tel:+17572355070" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors">
-                    +1 (757) 235-5070
-                  </a>
+                  <div className="space-y-1">
+                    <a href="tel:+919265739137" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors block">
+                      +91 92657 39137
+                    </a>
+                    <a href="tel:+17572355070" className="text-charcoal hover:text-amber-accent font-mono font-bold transition-colors block">
+                      +1 (757) 235-5070
+                    </a>
+                  </div>
                 </div>
 
                 <div>
                   <span className="font-mono text-[9px] text-muted-slate block font-bold">WHATSAPP DIRECT</span>
-                  <a 
-                    href="https://wa.me/17572355070" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-emerald-700 hover:text-amber-accent font-mono font-bold transition-colors inline-flex items-center gap-1.5"
-                  >
-                    SEND SECURE MESSAGE &rarr;
-                  </a>
+                  <div className="space-y-1">
+                    <a 
+                      href="https://wa.me/919265739137" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-emerald-700 hover:text-amber-accent font-mono font-bold transition-colors inline-flex items-center gap-1.5 block"
+                    >
+                      WHATSAPP (+91 92657 39137) &rarr;
+                    </a>
+                    <a 
+                      href="https://wa.me/17572355070" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-emerald-700 hover:text-amber-accent font-mono font-bold transition-colors inline-flex items-center gap-1.5 block"
+                    >
+                      WHATSAPP (+1 757 235 5070) &rarr;
+                    </a>
+                  </div>
+                </div>
+
+                <div>
+                  <span className="font-mono text-[9px] text-muted-slate block font-bold">PHYSICAL ADDRESS</span>
+                  <p className="text-charcoal leading-relaxed font-mono">
+                    Shop No C-2, Sai Pujan Residency,<br />
+                    Dindoli, Surat, Gujarat, India<br />
+                    Pin: 394210
+                  </p>
                 </div>
               </div>
             </div>

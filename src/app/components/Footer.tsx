@@ -22,6 +22,9 @@ export default function Footer() {
             <p className="font-sans text-xs text-muted-slate max-w-sm leading-relaxed">
               We engineer custom software systems, scalable backends, and performance-tuned APIs. We write dedicated, clean code tailored strictly to your operations.
             </p>
+            <div className="font-mono text-[9px] text-muted-slate">
+              Shop No C-2, Sai Pujan Residency, Dindoli, Surat, Gujarat - 394210
+            </div>
           </div>
 
           {/* Navigation Column */}
@@ -95,9 +98,9 @@ export default function Footer() {
             &copy; {currentYear} Koli Tech by Monika Koli.
           </div>
           
-          <div className="font-mono text-[9px] text-muted-slate flex space-x-6">
+          <div className="font-mono text-[9px] text-muted-slate flex flex-wrap gap-x-6 gap-y-2">
             <span>
-              CALL: <a href="tel:+17572355070" className="hover:text-amber-accent transition-colors">+1 (757) 235-5070</a>
+              CALL: <a href="tel:+919265739137" className="hover:text-amber-accent transition-colors">+91 92657 39137</a> / <a href="tel:+17572355070" className="hover:text-amber-accent transition-colors">+1 (757) 235-5070</a>
             </span>
             <span>
               WRITE: <a href="mailto:support@kolitech.in" className="hover:text-amber-accent transition-colors">support@kolitech.in</a>
