@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 const plans = [
   {
     title: "Web and App Development",
-    price: "500,000",
+    price: "250,000",
     billing: "starting price",
     description:
       "Custom websites and applications built to match your business needs.",
@@ -28,7 +28,7 @@ const plans = [
   },
   {
     title: "CRM Base Service",
-    price: "300,000",
+    price: "500,000",
     billing: "starting price",
     description:
       "A centralized CRM solution to manage customers, leads and business workflows.",
@@ -49,7 +49,7 @@ const plans = [
   },
   {
     title: "Web & App Maintenance & Support",
-    price: "200,000",
+    price: "250,000",
     billing: "per month",
     description:
       "Ongoing maintenance to keep your website and applications secure, updated and reliable.",
@@ -136,36 +136,30 @@ export default function PricingPage() {
   const paymentFormRef = useRef<HTMLFormElement>(null);
 
   // Load the corresponding Razorpay script for the selected plan.
-  useEffect(() => {
-    if (!selectedPlan || !paymentFormRef.current) return;
 
-    const form = paymentFormRef.current;
+useEffect(() => {
+  if (!selectedPlan || !paymentFormRef.current) return;
+
+  const form = paymentFormRef.current;
+  form.replaceChildren();
+
+  const script = document.createElement("script");
+
+  script.src =
+    "https://checkout.razorpay.com/v1/payment-button.js";
+  script.async = true;
+  script.setAttribute(
+    "data-payment_button_id",
+    "pl_Tn0vL17Tzp6fNG"
+  );
+
+  form.appendChild(script);
+
+  return () => {
+    script.remove();
     form.replaceChildren();
-
-    let script: HTMLScriptElement;
-
-    switch (selectedPlan.title) {
-      case "Web and App Development":
-        script = loadScript1(form);
-        break;
-
-      case "Web / Mobile App Development":
-        script = loadScript2(form);
-        break;
-
-      case "Maintenance & Support":
-        script = loadScript3(form);
-        break;
-
-      default:
-        return;
-    }
-
-    return () => {
-      script.remove();
-      form.replaceChildren();
-    };
-  }, [selectedPlan]);
+  };
+}, [selectedPlan]);
 
   // Handle Escape key and prevent background scrolling.
   useEffect(() => {
