@@ -3,7 +3,7 @@ import { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://kolitech.in";
   
-  const pages = ["", "/work", "/services", "/about", "/contact", "/terms", "/privacy", "/refund", "/pay"];
+  const pages = ["", "/work", "/services", "/about", "/pricing", "/contact", "/terms", "/privacy", "/refund", "/pay"];
   const caseStudies = ["/work/finflow-core", "/work/edustack-lms", "/work/logitrack-api"];
 
   const routes = [...pages, ...caseStudies].map((route) => ({

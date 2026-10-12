@@ -9,8 +9,9 @@ export default function Header() {
   const links = [
     { name: "01. WORK", href: "/work" },
     { name: "02. SERVICES", href: "/services" },
-    { name: "03. ABOUT", href: "/about" },
-    { name: "04. CONTACT", href: "/contact" },
+    { name: "03. PRICING", href: "/pricing" },
+    { name: "04. ABOUT", href: "/about" },
+    { name: "05. CONTACT", href: "/contact" },
   ];
 
   return (
