@@ -116,7 +116,7 @@ function loadScript3(form: HTMLFormElement) {
   script3.async = true;
   script3.setAttribute(
     "data-payment_button_id",
-    RAZORPAY_BUTTON_ID_3
+    RAZORPAY_BUTTON_ID_1
   );
 
   form.appendChild(script3);
@@ -242,7 +242,7 @@ useEffect(() => {
                     ₹{plan.price}
                   </span>
 
-                  
+
 <span className="inline-flex items-center gap-1.5 rounded-full border border-[#B9E7D9] bg-[#E8F7F2] px-3 py-1.5 text-[11px] font-semibold tracking-wide text-[#087F69] shadow-sm">
   <svg
     className="h-3.5 w-3.5"
