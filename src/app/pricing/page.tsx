@@ -259,9 +259,6 @@ useEffect(() => {
 </span>
 
 
-                  <span className="text-xs font-medium text-[#89867d]">
-                    {plan.billing}
-                  </span>
                 </div>
 
                 <div className="my-5 border-t border-[#eeeae3]" />
