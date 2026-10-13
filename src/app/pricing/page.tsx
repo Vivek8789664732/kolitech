@@ -8,7 +8,6 @@ const plans = [
   {
     title: "Web and App Development",
     price: "250,000",
-    billing: "starting price",
     description:
       "Custom websites and applications built to match your business needs.",
     features: [
@@ -29,7 +28,6 @@ const plans = [
   {
     title: "CRM Base Service",
     price: "500,000",
-    billing: "starting price",
     description:
       "A centralized CRM solution to manage customers, leads and business workflows.",
     features: [
@@ -50,7 +48,6 @@ const plans = [
   {
     title: "Web & App Maintenance & Support",
     price: "250,000",
-    billing: "per month",
     description:
       "Ongoing maintenance to keep your website and applications secure, updated and reliable.",
     features: [
@@ -73,9 +70,8 @@ const plans = [
 
 
 // Keep separate IDs so each plan can use its own Razorpay button.
-const RAZORPAY_BUTTON_ID_1 = "pl_Tn0vL17Tzp6fNG";
+const RAZORPAY_BUTTON_ID_1 = "pl_TnOjYmpavPftcm";
 const RAZORPAY_BUTTON_ID_2 = "pl_Tn0vL17Tzp6fNG";
-const RAZORPAY_BUTTON_ID_3 = "pl_Tn0vL17Tzp6fNG";
 
 const RAZORPAY_SCRIPT_URL =
   "https://checkout.razorpay.com/v1/payment-button.js";
@@ -137,20 +133,37 @@ export default function PricingPage() {
 
   // Load the corresponding Razorpay script for the selected plan.
 
+
 useEffect(() => {
   if (!selectedPlan || !paymentFormRef.current) return;
 
   const form = paymentFormRef.current;
   form.replaceChildren();
 
-  const script = document.createElement("script");
+  let paymentButtonId: string;
 
-  script.src =
-    "https://checkout.razorpay.com/v1/payment-button.js";
+  // Web Development and Maintenance use the same button
+  if (
+    selectedPlan.title === "Web and App Development" ||
+    selectedPlan.title === "Web & App Maintenance & Support"
+  ) {
+    paymentButtonId = RAZORPAY_BUTTON_ID_1;
+  } 
+  // CRM uses its separate button
+  else if (selectedPlan.title === "CRM Base Service") {
+    paymentButtonId = RAZORPAY_BUTTON_ID_2;
+  } 
+  else {
+    return;
+  }
+
+  const script = document.createElement("script");
+  script.src = RAZORPAY_SCRIPT_URL;
   script.async = true;
+
   script.setAttribute(
     "data-payment_button_id",
-    "pl_Tn0vL17Tzp6fNG"
+    paymentButtonId
   );
 
   form.appendChild(script);
@@ -160,6 +173,7 @@ useEffect(() => {
     form.replaceChildren();
   };
 }, [selectedPlan]);
+
 
   // Handle Escape key and prevent background scrolling.
   useEffect(() => {
@@ -186,8 +200,7 @@ useEffect(() => {
       {/* Pricing cards */}
       <section
         id="pricing"
-        className="scroll-mt-24 px-4 pb-16 pt-5 sm:px-6 sm:pb-20 lg:px-8"
-      >
+        className="scroll-mt-24 px-4 pb-16 pt-5 sm:px-6 sm:pb-20 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="mb-7 flex flex-col gap-2 sm:mb-9 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -228,6 +241,23 @@ useEffect(() => {
                   <span className="text-3xl font-bold tracking-tight text-[#20251f] sm:text-[34px]">
                     ₹{plan.price}
                   </span>
+
+                  
+<span className="inline-flex items-center gap-1.5 rounded-full border border-[#B9E7D9] bg-[#E8F7F2] px-3 py-1.5 text-[11px] font-semibold tracking-wide text-[#087F69] shadow-sm">
+  <svg
+    className="h-3.5 w-3.5"
+    viewBox="0 0 20 20"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.7"
+    aria-hidden="true"
+  >
+    <rect x="3" y="3" width="14" height="14" rx="3" />
+    <path d="M7 7h6M7 10h6M7 13h3" />
+  </svg>
+  Per project
+</span>
+
 
                   <span className="text-xs font-medium text-[#89867d]">
                     {plan.billing}

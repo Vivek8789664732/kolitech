@@ -45,7 +45,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/services" className="hover:text-amber-accent transition-colors duration-150">
-                  Services & Pricing
+                  Services 
+                </Link>
+              </li>
+               <li>
+                <Link href="/pricing" className="hover:text-amber-accent transition-colors duration-150">
+                 Pricing
                 </Link>
               </li>
               <li>
@@ -82,11 +87,11 @@ export default function Footer() {
                   Refund Policy
                 </Link>
               </li>
-              <li>
+             {/* <li>
                 <Link href="/pay" className="hover:text-amber-accent transition-colors duration-150">
                   Direct Payment
                 </Link>
-              </li>
+              </li>*/}
 
             </ul>
           </div>
