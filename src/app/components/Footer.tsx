@@ -74,7 +74,7 @@ export default function Footer() {
             <ul className="space-y-2 font-sans text-xs text-muted-slate">
               <li>
                 <Link href="/terms" className="hover:text-amber-accent transition-colors duration-150">
-                  Terms of Service
+                  Terms and Conditions
                 </Link>
               </li>
               <li>

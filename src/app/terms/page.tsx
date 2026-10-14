@@ -1,40 +1,50 @@
+
 import Link from "next/link";
 
 export default function Terms() {
-  const lastUpdated = "July 28, 2026";
-
   const sections = [
-    { id: "scope", title: "1. Scope of Services" },
-    { id: "responsibility", title: "2. Client Responsibilities" },
-    { id: "payments", title: "3. Milestone Payments & Invoicing" },
-    { id: "ip-rights", title: "4. Intellectual Property Transfer" },
-    { id: "portfolio", title: "5. Portfolio & Marketing Rights" },
-    { id: "warranty", title: "6. Defect Warranty Period" },
-    { id: "liability", title: "7. Exclusions & Liability Caps" },
-    { id: "disputes", title: "8. Governing Law & Jurisdiction" }
+    { id: "intellectual-property", title: "1. Intellectual Property" },
+    { id: "pricing", title: "2. Pricing" },
+    { id: "payments", title: "3. Payment Methods" },
+    { id: "refunds", title: "4. Refunds and Cancellations" },
+    { id: "website-use", title: "5. Use of Website" },
+    { id: "liability", title: "6. Limitation of Liability" },
+    { id: "governing-law", title: "7. Governing Law and Jurisdiction" },
+    { id: "changes", title: "8. Changes to These Terms" },
+    { id: "contact", title: "9. Contact Information" },
   ];
 
   return (
     <div className="w-full min-h-screen bg-alabaster text-charcoal py-12 px-6">
       <div className="mx-auto max-w-7xl space-y-8">
+
         {/* Header Block */}
         <div className="border-b border-sand-border pb-6 space-y-2">
-          <span className="font-mono text-xs text-amber-accent tracking-widest uppercase block">Contractual Parameters</span>
-          <h1 className="font-serif text-3xl md:text-4xl font-normal text-charcoal">Terms of Service</h1>
-          <div className="font-mono text-[9px] text-muted-slate">LAST UPDATED: {lastUpdated} • DRAFT VERSION</div>
+          <span className="font-mono text-xs text-amber-accent tracking-widest uppercase block">
+            Contractual Parameters
+          </span>
+
+          <h1 className="font-serif text-3xl md:text-4xl font-normal text-charcoal">
+            Terms and Conditions
+          </h1>
         </div>
 
         {/* Sidebar + Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+
           {/* Jump-To Navigation (Desktop Only) */}
           <aside className="hidden lg:block lg:col-span-4 sticky top-28 border border-sand-border bg-sandstone p-6 rounded-xl">
             <div className="font-mono text-xs text-amber-accent uppercase tracking-wider border-b border-sand-border/60 pb-2 mb-4">
               Section Index
             </div>
+
             <ul className="space-y-3 font-mono text-[10px] text-muted-slate">
               {sections.map((sec) => (
                 <li key={sec.id}>
-                  <Link href={`#${sec.id}`} className="hover:text-amber-accent transition-colors">
+                  <Link
+                    href={`#${sec.id}`}
+                    className="hover:text-amber-accent transition-colors"
+                  >
                     {sec.title}
                   </Link>
                 </li>
@@ -44,79 +54,286 @@ export default function Terms() {
 
           {/* Main Legal Content */}
           <article className="lg:col-span-8 space-y-10 font-sans text-xs text-muted-slate leading-relaxed">
-            
-            {/* Section 1 */}
-            <section id="scope" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">1. Scope of Services</h2>
+
+            {/* Introduction */}
+            <div className="space-y-3">
               <p>
-                Kolitech (&quot;Company&quot;) provides custom software engineering services. Every project requires a signed Project Proposal detailing features, deliverables, and estimated weeks. Any work outside the written Project Proposal constitutes a scope change and will be invoiced separately under a revised proposal.
+                Welcome to KOLI TECH. By accessing or using our website, you
+                agree to comply with these Terms and Conditions. Please read
+                them carefully before using our website or services.
+              </p>
+            </div>
+
+            {/* Section 1 */}
+            <section
+              id="intellectual-property"
+              className="space-y-3 scroll-mt-28"
+            >
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                1. Intellectual Property
+              </h2>
+
+              <p>
+                All content available on the KOLI TECH website, including but
+                not limited to:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Logos and branding</li>
+                <li>Images and visual materials</li>
+                <li>Product and website designs</li>
+                <li>Text, graphics, and other website content</li>
+              </ul>
+
+              <p>
+                is owned by KOLI TECH or used with appropriate authorization
+                and is protected under applicable intellectual property and
+                copyright laws.
+              </p>
+
+              <p>
+                You may not copy, reproduce, distribute, modify, or use our
+                website content for commercial purposes without prior written
+                permission, except where permitted by applicable law.
               </p>
             </section>
 
             {/* Section 2 */}
-            <section id="responsibility" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">2. Client Responsibilities</h2>
-              <p>
-                Client must supply timely feedback, repository access keys, database credential files, and assets required for integration. We budget up to five business days for Client reviews; review delays extending beyond this gate will extend delivery milestones by an equal amount of calendar time.
-              </p>
+            <section id="pricing" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                2. Pricing
+              </h2>
+
+              <ul className="list-disc pl-6 space-y-1">
+                <li>
+                  All prices are listed in Indian Rupees (INR), unless
+                  otherwise specified.
+                </li>
+                <li>
+                  Prices are inclusive of applicable taxes unless stated
+                  otherwise.
+                </li>
+                <li>
+                  We reserve the right to change pricing, discounts,
+                  promotional offers, or service charges at any time without
+                  prior notice.
+                </li>
+                <li>
+                  The price agreed upon for a specific project or service will
+                  be subject to the terms confirmed with the client.
+                </li>
+              </ul>
             </section>
 
             {/* Section 3 */}
             <section id="payments" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">3. Milestone Payments & Invoicing</h2>
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                3. Payment Methods
+              </h2>
+
               <p>
-                Projects are billed milestone-wise. Standard terms require an advance deposit before project initialization. Subsequent payments are due within seven business days of milestone completion. Late payments exceeding 15 calendar days will halt developer environments and pipeline runs until balances clear.
+                KOLI TECH accepts multiple payment methods, which may include:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Credit Cards and Debit Cards</li>
+                <li>UPI</li>
+                <li>Net Banking</li>
+              </ul>
+
+              <p>
+                Available payment methods may vary depending on the service,
+                payment provider, and customer location.
+              </p>
+
+              <p>
+                Customers must ensure that their payment details are accurate
+                and that they are authorized to use the selected payment
+                method.
               </p>
             </section>
 
             {/* Section 4 */}
-            <section id="ip-rights" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">4. Intellectual Property Transfer</h2>
+            <section id="refunds" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                4. Refunds and Cancellations
+              </h2>
+
               <p>
-                All intellectual property, code repositories, schema files, and customized assets compiled for the Client transfer to the Client **only upon full settlement of all outstanding invoices**. Pre-existing code assets, reusable utilities, and script templates compiled by Kolitech prior to the project remain the property of the Company, but Client is granted a perpetual, royalty-free license to use them inside their custom system.
+                Refund eligibility, cancellation conditions, processing
+                procedures, and applicable timelines are explained in our
+                separate Refund Policy.
+              </p>
+
+              <p>
+                Please review our Refund Policy before purchasing or engaging
+                our services.
+              </p>
+
+              <p>
+                Any refund request will be handled in accordance with the
+                applicable Refund Policy and relevant laws.
               </p>
             </section>
 
             {/* Section 5 */}
-            <section id="portfolio" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">5. Portfolio & Marketing Rights</h2>
+            <section id="website-use" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                5. Use of Website
+              </h2>
+
               <p>
-                Unless Client opts out in writing, Company reserves the right to list Client&apos;s name, project metrics, and post-mortems publicly in the studio catalog and website case studies. We will respect all NDAs regarding proprietary data, but retain the right to showcase structural outcomes (e.g. latency metrics).
+                By using our website, you agree not to misuse the website or
+                engage in any unlawful activity.
+              </p>
+
+              <p>Prohibited activities include:</p>
+
+              <ul className="list-disc pl-6 space-y-1">
+                <li>
+                  Attempting to hack or gain unauthorized access to our
+                  website, servers, or systems.
+                </li>
+                <li>
+                  Uploading or distributing malware, viruses, or other
+                  harmful software.
+                </li>
+                <li>
+                  Engaging in spamming, fraudulent activities, or deceptive
+                  practices.
+                </li>
+                <li>
+                  Interfering with website functionality, security, or other
+                  users&apos; access.
+                </li>
+                <li>
+                  Using our website for activities that violate applicable
+                  laws.
+                </li>
+              </ul>
+
+              <p>
+                Violation of these terms may result in suspension or
+                termination of access and may lead to legal action where
+                appropriate.
               </p>
             </section>
 
             {/* Section 6 */}
-            <section id="warranty" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">6. Defect Warranty Period</h2>
+            <section id="liability" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                6. Limitation of Liability
+              </h2>
+
               <p>
-                We provide a 60-day defect warranty period starting from production launch. We will resolve system bugs and database execution failures that deviate from the initial Project Proposal specifications at no additional cost. This warranty excludes modifications made by third parties, outages of external cloud services, or defects originating from user-supplied assets.
+                To the extent permitted by applicable law, KOLI TECH shall not
+                be liable for:
+              </p>
+
+              <ul className="list-disc pl-6 space-y-1">
+                <li>
+                  Direct, indirect, incidental, or consequential damages
+                  arising from the use of our website or services.
+                </li>
+                <li>
+                  Loss of data, profits, business opportunities, or revenue.
+                </li>
+                <li>
+                  Temporary website interruptions, technical errors, or
+                  inability to access our website.
+                </li>
+                <li>
+                  Issues arising from third-party websites, services, or
+                  payment providers.
+                </li>
+              </ul>
+
+              <p>
+                We make reasonable efforts to maintain website functionality
+                and reliability but do not guarantee uninterrupted or
+                error-free access.
+              </p>
+
+              <p>
+                Nothing in these Terms and Conditions excludes or limits
+                liability where such exclusion or limitation is prohibited by
+                applicable law.
               </p>
             </section>
 
             {/* Section 7 */}
-            <section id="liability" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">7. Exclusions & Liability Caps</h2>
+            <section id="governing-law" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                7. Governing Law and Jurisdiction
+              </h2>
+
               <p>
-                Kolitech is not responsible for host server outages, domain register lapses, or cloud API changes (e.g. AWS pricing shifts). **Our maximum liability for any defect, delay, or damage is capped at the total fee amount paid by the Client to Kolitech for the specific project.**
+                These Terms and Conditions shall be governed by the laws of
+                India.
+              </p>
+
+              <p>
+                Any disputes arising from the use of our website or services
+                shall be subject to the jurisdiction of the competent courts
+                in Gujarat, India, subject to applicable law.
               </p>
             </section>
 
             {/* Section 8 */}
-            <section id="disputes" className="space-y-3 scroll-mt-28">
-              <h2 className="font-serif text-lg text-charcoal font-medium">8. Governing Law & Dispute Resolution</h2>
+            <section id="changes" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                8. Changes to These Terms
+              </h2>
+
               <p>
-                These terms are governed by standard commercial regulations. Any legal dispute or breach claim will be settled through standard binding commercial arbitration.
+                KOLI TECH reserves the right to update or modify these Terms
+                and Conditions at any time.
+              </p>
+
+              <p>
+                Changes will be published on this page with an updated
+                revision date. We encourage users to review this page
+                periodically.
               </p>
             </section>
 
-            {/* Action Flags */}
-            <div className="border border-sand-border bg-sandstone/40 p-6 space-y-4 font-mono text-[9px] rounded-xl">
-              <div className="text-amber-accent font-bold">ACTION REQUIRED BY CLIENT LEGAL COUNSEL:</div>
-              <ul className="space-y-2 text-muted-slate">
-                <li>1. [ACTION NEEDED: Confirm governing law and arbitration venue clauses with corporate counsel.]</li>
-                <li>2. [ACTION NEEDED: Review milestone payment definitions and late payment fee parameters for compliance.]</li>
-              </ul>
-            </div>
+            {/* Section 9 */}
+            <section id="contact" className="space-y-3 scroll-mt-28">
+              <h2 className="font-serif text-lg text-charcoal font-medium">
+                9. Contact Information
+              </h2>
+
+              <p>
+                If you have any questions regarding these Terms and
+                Conditions, please contact us through our official website.
+              </p>
+
+              <div className="bg-sandstone border border-sand-border p-4 font-mono text-[10px] space-y-2 text-charcoal rounded-xl">
+                <div className="text-amber-accent uppercase tracking-wider">
+                  Contact Details
+                </div>
+
+                <div>BUSINESS NAME: KOLI TECH</div>
+
+                <div>
+                  WEBSITE:{" "}
+                  <a
+                    href="https://kolitech.in"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-amber-accent hover:underline"
+                  >
+                    kolitech.in
+                  </a>
+                </div>
+              </div>
+
+              <p>
+                By accessing or using our website, you acknowledge that you
+                have read and understood these Terms and Conditions.
+              </p>
+            </section>
+
           </article>
         </div>
       </div>
